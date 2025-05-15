@@ -1,0 +1,121 @@
+#VRML_SIM R2023b utf8
+
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackground.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/backgrounds/protos/TexturedBackgroundLight.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/floors/protos/RectangleArena.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/BrushedAluminium.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/objects/apartment_structure/protos/Wall.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/Roughcast.proto"
+EXTERNPROTO "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/robots/gctronic/e-puck/protos/E-puck.proto"
+
+WorldInfo {
+}
+Viewpoint {
+  orientation 0.5443191150852417 0.5546027015489627 -0.6293906135202617 2.04896908736372
+  position 0.06821343625099416 0.19923243607894164 1.6057643050951274
+}
+TexturedBackground {
+}
+TexturedBackgroundLight {
+}
+RectangleArena {
+  floorAppearance PBRAppearance {
+    roughness 1
+    roughnessMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_roughness.jpg"
+      ]
+    }
+    metalness 0
+    normalMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_normal.jpg"
+      ]
+    }
+    occlusionMap ImageTexture {
+      url [
+        "https://raw.githubusercontent.com/cyberbotics/webots/R2023b/projects/appearances/protos/textures/parquetry/chequered_parquetry_occlusion.jpg"
+      ]
+    }
+  }
+  wallAppearance BrushedAluminium {
+    colorOverride 0.101961 0.372549 0.705882
+  }
+}
+E-puck {
+  hidden position_0_0 4198.829903756614
+  hidden position_0_1 5731.204496276903
+  hidden rotation_1 0 0.9999999999999999 0 1.6621185606501638
+  hidden rotation_2 0 1 0 0.9394961291203613
+  translation 0.375377 -0.373441 -6.39623e-05
+  rotation -3.04654e-10 -2.96174e-10 1 -1.6000853071795866
+  controller "my_controller"
+}
+Wall {
+  translation 0.37 -0.25 0
+  rotation 0 0 1 -1.5707953071795862
+  name "wall(3)"
+  size 0.01 0.25 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.25 -0.13 0
+  size 0.01 0.25 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -0.25 0.01 0
+  name "wall(5)"
+  size 0.01 0.5 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation -6.74634e-14 4.04052e-07 0
+  rotation 0 0 1 1.5708
+  name "wall(4)"
+  size 0.01 0.5 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0.25 0.38 0
+  rotation 0 1 0 4.692820414042842e-06
+  name "wall(1)"
+  size 0.01 0.25 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
+Wall {
+  translation 0 0.01 0
+  name "wall(2)"
+  size 0.01 0.5 0.1
+  appearance Roughcast {
+    colorOverride 0.101961 0.372549 0.705882
+    textureTransform TextureTransform {
+      scale 2.4 1
+    }
+  }
+}
